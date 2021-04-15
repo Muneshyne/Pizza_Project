@@ -23,9 +23,9 @@ function getReceipt() {
         sizeTotal = 20;
     }
     runningTotal = sizeTotal;
-    console.log(selectedSize+" = $"+sizeTotal+".99");
+    console.log(selectedSize+" = $"+sizeTotal+".00");
     console.log("size text1: "+text1);
-    console.log("subtotal: $"+runningTotal+".99");
+    console.log("subtotal: $"+runningTotal+".00");
     //these variables will get passed on to each function
     getTopping(runningTotal,text1);
 };
@@ -49,10 +49,10 @@ function getTopping(runningTotal,text1) {
     }
     runningTotal = (runningTotal + toppingTotal);
     console.log("total selected topping items: "+toppingCount);
-    console.log(toppingCount+" topping -1 free topping = "+"$"+toppingTotal+".99");
+    console.log(toppingCount+" topping -1 free topping = "+"$"+toppingTotal+".00");
     console.log("topping text1: "+text1);
-    console.log("Purchase Total: "+"$"+runningTotal+".99");
+    console.log("Purchase Total: "+"$"+runningTotal+".00");
     document.getElementById("showText").innerHTML=text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
-        runningTotal+".99"+"</strong></h3>"
+        runningTotal+".00"+"</strong></h3>"
 };
